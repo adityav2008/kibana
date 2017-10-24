@@ -19,4 +19,5 @@ Route::group(['prefix' => 'dashboard'], function () {
   Route::get('/security-dashboard-endpoints', function () {
       return view('content.index');
   });
+  Route::get('/test', 'SCCM\GetELKDataController@index');
 });
