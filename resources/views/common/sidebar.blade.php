@@ -6,7 +6,7 @@
         <li class="has_sub">
           <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="label label-success pull-right">2</span> <span> Dashboard </span> </a>
           <ul class="list-unstyled">
-            <li><a href="{{url('/')}}">Security Dashboard-Endpoints</a></li>
+            <li><a href="{{url('/dashboard/security-dashboard-endpoints')}}">Security Dashboard-Endpoints</a></li>
           </ul>
         </li>
       </ul>

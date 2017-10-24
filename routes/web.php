@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('content.index');
+    return view('content.welcome');
+});
+
+Route::group(['prefix' => 'dashboard'], function () {
+  Route::get('/security-dashboard-endpoints', function () {
+      return view('content.index');
+  });
 });
