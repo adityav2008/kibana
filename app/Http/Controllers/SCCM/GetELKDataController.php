@@ -12,10 +12,13 @@ class GetELKDataController extends Controller
 {
     public function index(Request $request)
     {
+        set_time_limit(0);
+        ini_set('memory_limit', '4096M');
         $this->sccmData();
     }
 
     public function sccmData(){
+
         $hosts = ['172.16.0.200:9203'];
         $client = ClientBuilder::create()->setHosts($hosts)->build();
         $mapping_params = ['index' => 'sccm'];
